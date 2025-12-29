@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+/* Auth Page */
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 30px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.auth-card button.secondary {
+  background: #555;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.message {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Header */
+.header {
+  background: #1976d2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  padding: 6px 12px;
+  border: none;
+  background: white;
+  color: #1976d2;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.card input,
+.card textarea,
+.card select {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Filters */
+.filters {
+  margin: 0 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Issue List */
+.issue-list {
+  margin: 20px;
+}
+
+.issue {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #1976d2;
+  border-radius: 4px;
+}
+
+.issue.high { border-color: #d32f2f; }
+.issue.medium { border-color: #f9a825; }
+.issue.low { border-color: #388e3c; }
+
+.warning {
+  color: #d32f2f;
+  font-size: 14px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Issue Board | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h2>Smart Issue Board</h2>
+    <div class="user-info">
+      <span id="userEmail"></span>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <!-- Create Issue -->
+  <section class="card">
+    <h3>Create New Issue</h3>
+
+    <input type="text" id="title" placeholder="Issue Title">
+    <textarea id="description" placeholder="Issue Description"></textarea>
+
+    <div class="row">
+      <select id="priority">
+        <option value="">Priority</option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <select id="status">
+        <option>Open</option>
+        <option>In Progress</option>
+        <option>Done</option>
+      </select>
+
+      <input type="text" id="assignedTo" placeholder="Assigned To (Email)">
+    </div>
+
+    <button id="createIssueBtn">Create Issue</button>
+    <p id="similarWarning" class="warning"></p>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <select id="filterStatus">
+      <option value="">All Status</option>
+      <option>Open</option>
+      <option>In Progress</option>
+      <option>Done</option>
+    </select>
+
+    <select id="filterPriority">
+      <option value="">All Priority</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+  </section>
+
+  <!-- Issue List -->
+  <section id="issueList" class="issue-list">
+    <!-- Issues will be injected here -->
+  </section>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/issues.js"></script>
+</body>
+</html>
