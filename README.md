@@ -61,3 +61,11 @@ Users must move it through **In Progress**, ensuring realistic workflow handling
 
 ## 🧑‍💻 Author
 Built as part of an internship assignment to demonstrate practical problem-solving and real-world decision making.
+
+---
+
+## 🚀 Live Demo
+
+Deployed Application URL:  
+https://smart-issue-board-9wwi6fwdi-chandra-sekhars-projects-782c8712.vercel.app
+
