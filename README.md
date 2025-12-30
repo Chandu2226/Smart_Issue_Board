@@ -67,5 +67,5 @@ Built as part of an internship assignment to demonstrate practical problem-solvi
 ## 🚀 Live Demo
 
 Deployed Application URL:  
-https://smart-issue-board-9wwi6fwdi-chandra-sekhars-projects-782c8712.vercel.app
+https://smart-issue-board-two.vercel.app/
 
