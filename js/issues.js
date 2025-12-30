@@ -45,13 +45,24 @@ function displayIssues() {
     const div = document.createElement("div");
     div.className = `issue ${issue.priority.toLowerCase()}`;
     div.innerHTML = `
-      <h4>${issue.title}</h4>
-      <p>${issue.description}</p>
-      <p><b>Status:</b> ${issue.status}</p>
-      <p><b>Priority:</b> ${issue.priority}</p>
-      <p><b>Assigned To:</b> ${issue.assignedTo}</p>
-      <small>Created by ${issue.createdBy}</small>
-    `;
+  <div class="issue-header">
+    <h4>${issue.title}</h4>
+    <span class="badge ${issue.priority.toLowerCase()}">${issue.priority}</span>
+  </div>
+
+  <p class="issue-desc">${issue.description || "No description provided."}</p>
+
+  <div class="issue-meta">
+    <span class="status ${issue.status.toLowerCase().replace(" ", "-")}">
+      ${issue.status}
+    </span>
+    <span>Assigned to: <b>${issue.assignedTo}</b></span>
+  </div>
+
+  <div class="issue-footer">
+    Created by <b>${issue.createdBy}</b>
+  </div>
+`;
     issueList.appendChild(div);
   });
 }
