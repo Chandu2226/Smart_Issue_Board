@@ -32,12 +32,13 @@
         <option>High</option>
       </select>
 
-      <select id="status">
-        <option>Open</option>
-        <option>In Progress</option>
-        <option>Done</option>
-      </select>
-
+      <label>Issue Status</label>
+         <select id="status">
+           <option value="" disabled selected>Select Status</option>
+           <option value="Open">Open</option>
+           <option value="In Progress">In Progress</option>
+           <option value="Done">Done</option>
+         </select>
       <input type="text" id="assignedTo" placeholder="Assigned To (Email)">
     </div>
 
